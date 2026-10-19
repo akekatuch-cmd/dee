@@ -1,0 +1,160 @@
+:root {
+    --bg-main: #f4efe6;          /* สีคัมภีร์เวทมนตร์โบราณ ครีมอุ่นนุ่มสายตา */
+    --card-bg: #fcfaf6;          /* สีแผ่นกระดาษเขียนบันทึก */
+    --text-primary: #3d342b;     /* สีหมึกน้ำตาลเข้มละมุน */
+    --text-muted: #786a5c;       /* สีหมึกซีดรอง */
+    --accent-color: #9e643c;     /* สีหนังโบราณ / อิฐอบอุ่น */
+    --border-color: #e0d4c3;     /* สีเส้นขอบกระดาษ */
+    --badge-bg: #ebdccb;        /* สีป้ายแท็กต่างโลก */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.header-hero {
+    background-color: #e8dbc9;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px dashed var(--accent-color);
+}
+
+.hero-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.site-tag {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.header-hero h1 {
+    font-size: 1.9rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.header-hero p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 35px auto;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(61, 52, 43, 0.04);
+}
+
+.section-title {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.text-content {
+    font-size: 0.95rem;
+}
+
+/* Character Cards Section */
+.char-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.char-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-main);
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    gap: 20px;
+}
+
+.char-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    flex-shrink: 0;
+}
+
+.char-info h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.series-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    background-color: var(--badge-bg);
+    color: var(--accent-color);
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin: 4px 0 8px 0;
+    font-weight: 400;
+}
+
+.char-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 580px) {
+    .char-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Game List */
+.game-list {
+    padding-left: 20px;
+    font-size: 0.95rem;
+}
+
+.game-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    margin-top: 40px;
+}
